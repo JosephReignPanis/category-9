@@ -1,0 +1,73 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --primary-hr-gradient: linear-gradient(
+      to right,
+      #b19cd9,
+      #3e1d47,
+      #865fc1,
+      #7d5ba6,
+      #f2eff7,
+      #6e4b9b,
+      #9a6fcb,
+      #c8b3e8
+    );
+    --secondary-hr-gradient: linear-gradient(
+      to right,
+      #b19cd9,
+      #f2eff7,
+      #6e4b9b,
+      #c8b3e8
+    );
+    --primary-btn-gradient: linear-gradient(
+      to right,
+      #6a3d9a,
+      #ba9cdd,
+      #6a3d9a
+    );
+    --nav-btn-gradient: linear-gradient(to right, #825117, #c29d47, #825117);
+    --nav-btn-gradient-hover: linear-gradient(
+      to right,
+      #6a3d9a,
+      #a98cd9,
+      #6a3d9a
+    );
+    --primary-bg-gradient: linear-gradient(to top, #2e1a47, #6e4ea1);
+
+    --primary-header-gradient: linear-gradient(
+      to right,
+      #4b287b,
+      #7e5baf,
+      #4b287b
+    );
+
+    --secondary-bg-gradient: linear-gradient(to top, #4b287b, #7c54ac);
+    --secondary-bg-gradient-hover: linear-gradient(to top, #6a3d9a, #8868bf);
+
+    --silver-btn-gradient: linear-gradient(
+      to top,
+      #3a3a3a,
+      #666666
+    ); /* subtle violet-gray */
+    --silver-btn-gradient-hover: linear-gradient(to top, #4c4c4c, #888888);
+
+    --text-primary: linear-gradient(
+      to top,
+      #a385d3,
+      #f2eff7
+    ); /* soft violet to off-white */
+    --text-primary-hover: linear-gradient(
+      to top,
+      #c9acf0,
+      #f8f4ff
+    ); /* brighter lavender hover */
+
+    --sb-gradient: linear-gradient(
+      to top,
+      #1e102e,
+      #3c2253,
+      #1e102e
+    ); /* dark violet layered bg */
+  }
+}
