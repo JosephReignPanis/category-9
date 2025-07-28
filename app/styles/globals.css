@@ -2,31 +2,31 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary-bg-gradient: linear-gradient(to top, #2c1b44, #50376f);
+  --secondary-bg-gradient: linear-gradient(to top, #3f1a66, #5f3e85);
+  --secondary-bg-gradient-hover: linear-gradient(to top, #57397c, #7a5cb1);
 
-  --primary-bg-gradient: linear-gradient(to top, #2e1a47, #825cbe);
-  --secondary-bg-gradient: linear-gradient(to top, #4b287b, #6b459a);
-  --secondary-bg-gradient-hover: linear-gradient(to top, #6a3d9a, #d3c1f2);
+  --primary-header-gradient: linear-gradient(
+    to right,
+    #3f1a66,
+    #5f3e85,
+    #3f1a66
+  );
 
-  --silver-btn-gradient: linear-gradient(to top, #3a3a3a, #666666);
-  --silver-btn-gradient-hover: linear-gradient(to top, #4c4c4c, #888888);
+  --primary-hr-gradient: linear-gradient(to right, #3f1a66, #5f3e85, #3f1a66);
+  --secondary-hr-gradient: linear-gradient(to right, #3f1a66, #5f3e85);
+
+  --primary-btn-gradient: linear-gradient(to top, #4b2a70, #6d4b9e);
+  --nav-btn-gradient: linear-gradient(to top, #5e3c88, #9270c4);
+  --nav-btn-gradient-hover: linear-gradient(to top, #4a2870, #7f61b0);
+
+  --silver-btn-gradient: linear-gradient(to top, #2b2b2b, #595959);
+  --silver-btn-gradient-hover: linear-gradient(to top, #444444, #777777);
 
   --text-primary: linear-gradient(to top, #a98cd9, #f2eff7);
-  --text-primary-hover: linear-gradient(to top, #7049a3, #f8f4ff);
+  --text-primary-hover: linear-gradient(to top, #cbb7f0, #ffffff);
 
-  --sb-gradient: linear-gradient(to top, #1e102e, #3c2253, #1e102e);
-
-  --primary-hr-gradient: linear-gradient(to right, #6a3d9a, #bea3e0);
-  --primary-btn-gradient: linear-gradient(to top, #7d5ba6, #c9acf0);
-  --nav-btn-gradient: linear-gradient(to top, #9a79cc, #d7c4f7);
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --sb-gradient: linear-gradient(to top, #1e102e, #3f1a66, #1e102e);
 }
 
 body {
@@ -35,7 +35,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  color: var(--foreground);
+  color: white;
   font-family: "Do Hyeon", sans-serif;
   font-weight: 300;
   font-style: normal;
@@ -61,13 +61,10 @@ tr {
 }
 
 .header {
-  border-radius: 0.5rem;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  font-weight: 700;
-  padding: 0.5rem;
   text-shadow: 0rem 0rem 1rem #000000;
-  background: var(--primary-header-gradient);
+  background-color: #1e102e;
+
+  background-image: linear-gradient(to right, #3f1a66, #5f3e85, #3f1a66);
 }
 
 .btn-golden-gradient {
@@ -81,6 +78,7 @@ tr {
   display: flex;
   flex-direction: row;
   gap: 0.75rem;
+  color: white;
 }
 
 .btn-gold-nav-gradient {
@@ -156,7 +154,7 @@ tr {
 .btn-goldsb-gradient {
   padding: 0.5rem;
   border-radius: 0.375rem;
-  color: #000000;
+  color: white;
   background: var(--primary-btn-gradient);
 }
 

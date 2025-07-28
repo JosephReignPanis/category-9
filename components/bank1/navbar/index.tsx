@@ -23,7 +23,7 @@ export default function Navbar() {
               height={20}
               alt="announcement"
             />
-            <p className=" w-96 overflow-hidden text-ellipsis whitespace-nowrap block">
+            <p className=" w-96 overflow-hidden text-ellipsis whitespace-nowrap block text-white">
               공지사항 제목에 오신것을 환영합니다.공지사항 제목에 오신것을
               환영합니다. 공지사항 제목에 오신것을 환영합니다.공지사항 제목에
               오신것을 환영합니다. 공지사항 제목에 오신것을 환영합니다.공지사항
@@ -44,7 +44,7 @@ export default function Navbar() {
             </Link>
           </div>
         </nav>
-        <nav className="flex flex-row justify-center items-center py-2 navgradient px-2 gap-5">
+        <nav className="flex flex-row justify-center items-center py-2 navgradient px-2 gap-5 text-white">
           <p>홍길동님</p>
           {userinfo.map((items, i) => (
             <span key={i} className="flex flex-row gap-2">
